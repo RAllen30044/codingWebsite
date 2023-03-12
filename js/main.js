@@ -126,4 +126,36 @@ for (const elem of closeModal) {
     this.parentElement.parentElement.classList.remove(isVisible);
   });
 }
-document.getElementsByClassName("portfolio-grid").innerHTML = 'Test';
+const grid = document.getElementsByClassName("portfolio-grid");
+
+
+
+const cardDiv =  document.createElement("div");
+
+cardDiv.setAttribute("class", "portfolio-card")
+cardDiv.setAttribute("data-item", "web")
+
+grid[0].appendChild(cardDiv);
+const porfolioCard=document.getElementsByClassName("portfolio-card");
+const cardBodyDiv =  document.createElement("div")
+cardBodyDiv.setAttribute("class", "card-body");
+porfolioCard[0].appendChild(cardBodyDiv);
+const cardBody = document.getElementsByClassName("card-body");
+const img = document.createElement("img");
+cardBody[0].appendChild(img);
+img.setAttribute("src","assets/images/portfolio-1.jpg")
+img.setAttribute("alt","portfolio icon")
+
+const anchorTag = document.createElement("a");
+cardBody[0].appendChild(anchorTag);
+anchorTag.setAttribute("href","#")
+anchorTag.setAttribute("class","card-popup-box")
+const popUp = document.getElementsByClassName("card-popup-box");
+const popUpDiv = document.createElement("div");
+const header3 = document.createElement("h3");
+popUp[0].appendChild(popUpDiv);
+let textNode= document.createTextNode("Web development")
+popUpDiv.appendChild(textNode);
+popUp[0].appendChild(header3);
+textNode= document.createTextNode("Food Website")
+header3.appendChild(textNode);
