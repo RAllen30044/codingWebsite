@@ -74,14 +74,17 @@ const generatePortfolioCard = (dataItemName, picture, category, product ) => {
   
 
 };
+
+// generatePortfolioCard = (dataItemName, Picture Directory, category, product )
+
 generatePortfolioCard("web","assets/images/portfolio-1.jpg", "Web Development","Food Website" )
 generatePortfolioCard("web","assets/images/portfolio-2.jpg", "Web Development","Skate Website" )
 generatePortfolioCard("web","assets/images/portfolio-3.jpg", "Web Development","Eating Website" )
 generatePortfolioCard("web","assets/images/portfolio-4.jpg", "Web Development","Cool Website" )
-generatePortfolioCard("app","assets/images/portfolio-5.jpg", "Web Development","Game App" )
-generatePortfolioCard("app","assets/images/portfolio-6.jpg", "Web Development","Gambling App"  )
-generatePortfolioCard("app","assets/images/portfolio-7.jpg", "Web Development","Money Website" )
-generatePortfolioCard("ui","assets/images/portfolio-8.jpg", "Web Development","Fantastic Design" )
+generatePortfolioCard("app","assets/images/portfolio-5.jpg", "App Development","Game App" )
+generatePortfolioCard("app","assets/images/portfolio-6.jpg", "App Development","Gambling App"  )
+generatePortfolioCard("app","assets/images/portfolio-7.jpg", "App Development","Money Website" )
+generatePortfolioCard("ui","assets/images/portfolio-8.jpg", "UI Design","Fantastic Design" )
 
 
 
@@ -192,35 +195,3 @@ for (const elem of closeModal) {
     this.parentElement.parentElement.classList.remove(isVisible);
   });
 }
-// const grid = document.getElementsByClassName("portfolio-grid");
-
-// const cardDiv =  document.createElement("div");
-
-// cardDiv.setAttribute("class", "portfolio-card")
-// cardDiv.setAttribute("data-item", "web")
-
-// grid[0].appendChild(cardDiv);
-// const portfolioCard=document.getElementsByClassName("portfolio-card");
-// const cardBodyDiv =  document.createElement("div")
-// cardBodyDiv.setAttribute("class", "card-body");
-// portfolioCard[0].appendChild(cardBodyDiv);
-// const cardBody = document.getElementsByClassName("card-body");
-// const img = document.createElement("img");
-// cardBody[0].appendChild(img);
-// img.setAttribute("src","assets/images/portfolio-1.jpg")
-// img.setAttribute("alt","portfolio icon")
-
-// const anchorTag = document.createElement("a");
-// cardBody[0].appendChild(anchorTag);
-// anchorTag.setAttribute("href","#")
-// anchorTag.setAttribute("class","card-popup-box")
-// const popUp = document.getElementsByClassName("card-popup-box");
-// const popUpDiv = document.createElement("div");
-// const header3 = document.createElement("h3");
-// popUp[0].appendChild(popUpDiv);
-// let textNode= document.createTextNode("Web development")
-// popUpDiv.appendChild(textNode);
-// popUp[0].appendChild(header3);
-// textNode= document.createTextNode("Food Website")
-// header3.appendChild(textNode);
-
